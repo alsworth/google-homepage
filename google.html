@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+
     <style>
         .googlelogo{
             display: block;
@@ -13,12 +16,39 @@
             margin-right: auto;
             margin-top: 200px;
         }
+
+        .searchbox{
+        position: relative;
+        left: 750px;
+        top: 40px;
+        border: 1px solid rgb(218, 211, 211);
+        border-radius: 24px;
+        width: 600px;
+        height: 40px;  
+        }
+
+        #search {
+        position: relative;
+        left: 150px;
+        top: 50px;
+        }
+
+        #mic {
+        position: relative;
+        left: 680px;
+        top: 50px;
+        }
+        
+      
+       
     
     </style>
 </head>
 <body>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the google logo" class="googlelogo">
-    
-    
+    <input type="text" class="searchbox" size="50">
+    <span class="material-icons" id="search">search</span>
+    <span class="material-icons" id="mic">mic</span>
+        
 </body>
 </html>
