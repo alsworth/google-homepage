@@ -19,14 +19,36 @@
         .searchbox {
             border-radius: 20px;
             border-width: 1.5px ;
-            border-color: rgba(133, 133, 133);;
+            border-color: rgba(133, 133, 133);
             display: flex;
             margin: auto;      
             margin-top: 29px;
             width: 460px;
-            height: 35px;
+            height: 37px;
         }
-      
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 32px;
+            max-width: 450px;
+            margin: auto;
+        }
+
+
+        
+        .button-search {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #5f6368;
+            background-color: #f2f2f2;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            border-width: 8.5px;
+        } 
+
 
      
     </style>
@@ -37,13 +59,20 @@
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" >
     </div>
     
- 
-    <form>
-        <input type="text" class="searchbox" >
-    </form>
 
-    <span class="material-icons-outlined" id="search">search</span>
-    <span class="material-icons-outlined" id="mic">mic</span>
+    <input type="text" class="searchbox">
+    
+    <div class="icons">
+        <span class="material-icons-outlined">search</span>
+        <span class="material-icons-outlined">mic</span>
+    </div>
+    
+    <div class="search-buttons">
+       <button class="button-search" type="button">Google Search</button>
+       <button class="button-search" type="button">I'm Feeling Lucky</button>
+    </div>
+ 
+
 
 </body>
 </html>
